@@ -1,0 +1,8 @@
+Sample client application for using the SC_Listener library
+
+* It requires the frequency modifications here: git://github.com/jkells/sc_listener.git
+
+* If you comment out a few lines it should also work with the original library here: http://github.com/stephencelis/sc_listener
+
+Just put the SC_Listener.m/h files in the root directory of the project.
+

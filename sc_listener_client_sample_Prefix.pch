@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'sc_listener_client_sample' target in the 'sc_listener_client_sample' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+#endif

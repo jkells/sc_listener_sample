@@ -1,0 +1,13 @@
+WindowsService/Setup/Release/
+Marketing/
+WindowsService/Remote Kitten/obj/
+build/
+Thumbs.db
+Thumbs.db:encryptable
+.DS_Store
+.DSStore
+*.mode1v3
+*.pbxuser
+*.suo
+*.exe
+*.pdb
