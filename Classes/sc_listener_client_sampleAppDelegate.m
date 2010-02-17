@@ -20,7 +20,7 @@
 - (void)applicationDidFinishLaunching:(UIApplication *)application {    
 	AudioSessionInitialize(NULL,NULL,NULL,NULL);
 	[[SCListener sharedListener] listen];
-	timer = [NSTimer scheduledTimerWithTimeInterval: 0.03 target: self selector: @selector(tick:) userInfo:nil repeats: YES];
+	timer = [NSTimer scheduledTimerWithTimeInterval: 1 target: self selector: @selector(tick:) userInfo:nil repeats: YES];
 	
     // Override point for customization after app launch    
     [window addSubview:viewController.view];
