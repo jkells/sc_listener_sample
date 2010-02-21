@@ -11,7 +11,7 @@
 @class sc_listener_client_sampleViewController;
 
 @interface sc_listener_client_sampleAppDelegate : NSObject <UIApplicationDelegate> {
-    UIWindow *window;
+	UIWindow *window;
 	NSTimer* timer;
     sc_listener_client_sampleViewController *viewController;
 }

@@ -16,11 +16,10 @@
 @synthesize viewController;
 @synthesize timer;
 
-
 - (void)applicationDidFinishLaunching:(UIApplication *)application {    
 	AudioSessionInitialize(NULL,NULL,NULL,NULL);
 	[[SCListener sharedListener] listen];
-	timer = [NSTimer scheduledTimerWithTimeInterval: 1 target: self selector: @selector(tick:) userInfo:nil repeats: YES];
+	timer = [NSTimer scheduledTimerWithTimeInterval: 0.5 target: self selector: @selector(tick:) userInfo:nil repeats: YES];
 	
     // Override point for customization after app launch    
     [window addSubview:viewController.view];
@@ -32,9 +31,14 @@
 	Float32 average_power = [[SCListener sharedListener] averagePower];
 	Float32 frequency = [[SCListener sharedListener] frequency];
 	
+	if(average_power < 0.007)
+		return;
+	
 	[viewController.peak_power_label setText: [NSString stringWithFormat: @"Peak Power %f", peak_power]];
 	[viewController.average_power_label setText: [NSString stringWithFormat: @"Average Power %f", average_power]];
 	[viewController.freq_label setText: [NSString stringWithFormat: @"Frequency %f", frequency]];
+	[viewController.fft_view updateFreqs: [[SCListener sharedListener] freq_db] data2: [[SCListener sharedListener] freq_db_harmonic]];
+	[viewController.fft_view setNeedsDisplay];
 }
 
 - (void)dealloc {

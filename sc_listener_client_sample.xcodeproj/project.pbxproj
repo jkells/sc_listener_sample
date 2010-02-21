@@ -15,8 +15,11 @@
 		2899E5220DE3E06400AC0155 /* sc_listener_client_sampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* sc_listener_client_sampleViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* sc_listener_client_sampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* sc_listener_client_sampleViewController.m */; };
+		491DEC2C112E7A820013FEB0 /* kiss_fftr.c in Sources */ = {isa = PBXBuildFile; fileRef = 491DEC2A112E7A820013FEB0 /* kiss_fftr.c */; };
+		49259D98112A5D7500C44931 /* kiss_fft.c in Sources */ = {isa = PBXBuildFile; fileRef = 49259D96112A5D7500C44931 /* kiss_fft.c */; };
+		4934182F112A5E0000603588 /* SCListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 4934182E112A5E0000603588 /* SCListener.m */; };
 		496CE49B11227EEE000EB342 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 496CE49A11227EEE000EB342 /* AudioToolbox.framework */; };
-		49E58DD01122E48D002F4422 /* SCListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E58DCF1122E48D002F4422 /* SCListener.m */; };
+		49E2E1931130C4EB0073B8B0 /* FFTView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E2E1921130C4EB0073B8B0 /* FFTView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,9 +35,15 @@
 		28D7ACF70DDB3853001CB0EB /* sc_listener_client_sampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sc_listener_client_sampleViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* sc_listener_client_sample_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sc_listener_client_sample_Prefix.pch; sourceTree = "<group>"; };
+		491DEC2A112E7A820013FEB0 /* kiss_fftr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = kiss_fftr.c; path = ../sc_listener/kiss_fftr.c; sourceTree = SOURCE_ROOT; };
+		491DEC2B112E7A820013FEB0 /* kiss_fftr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kiss_fftr.h; path = ../sc_listener/kiss_fftr.h; sourceTree = SOURCE_ROOT; };
+		49259D96112A5D7500C44931 /* kiss_fft.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = kiss_fft.c; path = ../sc_listener/kiss_fft.c; sourceTree = SOURCE_ROOT; };
+		49259D97112A5D7500C44931 /* kiss_fft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kiss_fft.h; path = ../sc_listener/kiss_fft.h; sourceTree = SOURCE_ROOT; };
+		4934182D112A5E0000603588 /* SCListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCListener.h; path = ../sc_listener/SCListener.h; sourceTree = SOURCE_ROOT; };
+		4934182E112A5E0000603588 /* SCListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCListener.m; path = ../sc_listener/SCListener.m; sourceTree = SOURCE_ROOT; };
 		496CE49A11227EEE000EB342 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		49E58DCE1122E48D002F4422 /* SCListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCListener.h; sourceTree = "<group>"; };
-		49E58DCF1122E48D002F4422 /* SCListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCListener.m; sourceTree = "<group>"; };
+		49E2E1911130C4EB0073B8B0 /* FFTView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTView.h; sourceTree = "<group>"; };
+		49E2E1921130C4EB0073B8B0 /* FFTView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFTView.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* sc_listener_client_sample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "sc_listener_client_sample-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,6 +69,8 @@
 				1D3623250D0F684500981E51 /* sc_listener_client_sampleAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* sc_listener_client_sampleViewController.h */,
 				28D7ACF70DDB3853001CB0EB /* sc_listener_client_sampleViewController.m */,
+				49E2E1911130C4EB0073B8B0 /* FFTView.h */,
+				49E2E1921130C4EB0073B8B0 /* FFTView.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -118,8 +129,12 @@
 		496CE4A011227EF8000EB342 /* sc_listener_lib */ = {
 			isa = PBXGroup;
 			children = (
-				49E58DCE1122E48D002F4422 /* SCListener.h */,
-				49E58DCF1122E48D002F4422 /* SCListener.m */,
+				491DEC2A112E7A820013FEB0 /* kiss_fftr.c */,
+				491DEC2B112E7A820013FEB0 /* kiss_fftr.h */,
+				4934182D112A5E0000603588 /* SCListener.h */,
+				4934182E112A5E0000603588 /* SCListener.m */,
+				49259D96112A5D7500C44931 /* kiss_fft.c */,
+				49259D97112A5D7500C44931 /* kiss_fft.h */,
 			);
 			name = sc_listener_lib;
 			sourceTree = "<group>";
@@ -181,7 +196,10 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* sc_listener_client_sampleAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* sc_listener_client_sampleViewController.m in Sources */,
-				49E58DD01122E48D002F4422 /* SCListener.m in Sources */,
+				49259D98112A5D7500C44931 /* kiss_fft.c in Sources */,
+				4934182F112A5E0000603588 /* SCListener.m in Sources */,
+				491DEC2C112E7A820013FEB0 /* kiss_fftr.c in Sources */,
+				49E2E1931130C4EB0073B8B0 /* FFTView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
