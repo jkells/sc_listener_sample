@@ -19,6 +19,9 @@
 		49259D98112A5D7500C44931 /* kiss_fft.c in Sources */ = {isa = PBXBuildFile; fileRef = 49259D96112A5D7500C44931 /* kiss_fft.c */; };
 		4934182F112A5E0000603588 /* SCListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 4934182E112A5E0000603588 /* SCListener.m */; };
 		496CE49B11227EEE000EB342 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 496CE49A11227EEE000EB342 /* AudioToolbox.framework */; };
+		4995EB2611806D2000912822 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4995EB2511806D2000912822 /* CoreLocation.framework */; };
+		4995EB3A11806D9400912822 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4995EB3911806D9400912822 /* MapKit.framework */; };
+		4995EB4711806EB200912822 /* LocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4995EB4611806EB200912822 /* LocationController.m */; };
 		49E2E1931130C4EB0073B8B0 /* FFTView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E2E1921130C4EB0073B8B0 /* FFTView.m */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +45,10 @@
 		4934182D112A5E0000603588 /* SCListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCListener.h; path = ../sc_listener/SCListener.h; sourceTree = SOURCE_ROOT; };
 		4934182E112A5E0000603588 /* SCListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCListener.m; path = ../sc_listener/SCListener.m; sourceTree = SOURCE_ROOT; };
 		496CE49A11227EEE000EB342 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4995EB2511806D2000912822 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4995EB3911806D9400912822 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4995EB4511806EB200912822 /* LocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationController.h; sourceTree = "<group>"; };
+		4995EB4611806EB200912822 /* LocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationController.m; sourceTree = "<group>"; };
 		49E2E1911130C4EB0073B8B0 /* FFTView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTView.h; sourceTree = "<group>"; };
 		49E2E1921130C4EB0073B8B0 /* FFTView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFTView.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* sc_listener_client_sample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "sc_listener_client_sample-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
@@ -56,6 +63,8 @@
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
 				496CE49B11227EEE000EB342 /* AudioToolbox.framework in Frameworks */,
+				4995EB2611806D2000912822 /* CoreLocation.framework in Frameworks */,
+				4995EB3A11806D9400912822 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +80,8 @@
 				28D7ACF70DDB3853001CB0EB /* sc_listener_client_sampleViewController.m */,
 				49E2E1911130C4EB0073B8B0 /* FFTView.h */,
 				49E2E1921130C4EB0073B8B0 /* FFTView.m */,
+				4995EB4511806EB200912822 /* LocationController.h */,
+				4995EB4611806EB200912822 /* LocationController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -122,6 +133,8 @@
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
 				496CE49A11227EEE000EB342 /* AudioToolbox.framework */,
+				4995EB2511806D2000912822 /* CoreLocation.framework */,
+				4995EB3911806D9400912822 /* MapKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -200,6 +213,7 @@
 				4934182F112A5E0000603588 /* SCListener.m in Sources */,
 				491DEC2C112E7A820013FEB0 /* kiss_fftr.c in Sources */,
 				49E2E1931130C4EB0073B8B0 /* FFTView.m in Sources */,
+				4995EB4711806EB200912822 /* LocationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
